@@ -13,16 +13,17 @@ def main():
     for i in range(1, 4):
         # i個取る
         nowComb = list(itertools.combinations(range(4), i))
+        print('nowComb', nowComb)
         for c in nowComb:
-            # print('c', c)
+            print('c', c)
             for n in range(i):
                 # print('n', n)
-                # print(l[c[n]], 'を取ります')
+                print(l[c[n]], 'を取ります')
                 sumNow += l[c[n]]
             # print('sumNow', sumNow)
             if sumNow == sumC / 2:
                 print('Yes')
-                exit()
+                # exit()
             sumNow = 0
         # print(nowComb)
     print('No')
