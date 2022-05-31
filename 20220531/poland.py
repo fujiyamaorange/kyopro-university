@@ -3,8 +3,7 @@ from collections import deque
 
 def main():
     # sのデータ入力
-    s = input()
-    s = list(s)
+    s = list(input())
 
     # スタックを定義
     d = deque([])
